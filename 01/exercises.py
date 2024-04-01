@@ -1,6 +1,12 @@
 # Exercicio 01
 def max_consecutive_sum(nums):
-    # implementar a solução aqui
+    somaTotal = soma = nums[0]
+    
+    for num in nums[1:]:
+        soma = max(num, soma + num)
+        somaTotal = max(somaTotal, soma)
+        
+    return somaTotal
     pass
 
 # Testes 01
@@ -14,7 +20,7 @@ def test_max_consecutive_sum():
 
 # Exercício 02
 def is_palindrome(word):
-    # implementar a solução aqui
+    
     pass
 
 # Testes 02
